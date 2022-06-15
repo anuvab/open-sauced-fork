@@ -31,7 +31,7 @@ jobs:
       - name: "🔍 run tests"
         run: npm run test --if-present
             
-      - name: Percy Test
+      - name: "Percy Test"
         run: npx @percy/cli snapshot __inspect/
 
   lint:
