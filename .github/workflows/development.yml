@@ -35,7 +35,7 @@ jobs:
         run: npm install --save-dev @percy/cli
             
       - name: "Percy Test"
-        run: npx @percy/cli snapshot snapshots.yml
+        run: npx @percy/cli snapshot snapshots.json
 
   lint:
     name: Code standards
