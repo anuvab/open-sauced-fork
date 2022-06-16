@@ -30,9 +30,12 @@ jobs:
 
       - name: "🔍 run tests"
         run: npm run test --if-present
+      
+      - name: "install percy cli"
+        run: npm install --save-dev @percy/cli
             
       - name: "Percy Test"
-        run: npx @percy/cli snapshot __inspect/
+        run: npx @percy/cli snapshot snapshots.yml
 
   lint:
     name: Code standards
