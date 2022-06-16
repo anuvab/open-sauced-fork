@@ -29,6 +29,12 @@ jobs:
 
       - name: "📦 build Storybook"
         run: npx build-storybook
+      
+      - name: "install percy cli"
+        run: npm install @percy/cli --save-dev
+            
+      - name: "Percy Test"
+        run: npx @percy/cli snapshot snapshots.json
 
       - name: "🚀 deploy static"
         uses: peaceiris/actions-gh-pages@v3

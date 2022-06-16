@@ -32,7 +32,7 @@ jobs:
         run: npm run test --if-present
       
       - name: "install percy cli"
-        run: npm install --save-dev @percy/cli
+        run: npm install @percy/cli --save-dev
             
       - name: "Percy Test"
         run: npx @percy/cli snapshot snapshots.json

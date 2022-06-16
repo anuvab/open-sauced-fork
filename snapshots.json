@@ -1,0 +1,6 @@
+[{
+    "name": "Snapshot one",
+    "url": "http://localhost:8080",
+    "waitForTimeout": 1000
+  }]
+  
